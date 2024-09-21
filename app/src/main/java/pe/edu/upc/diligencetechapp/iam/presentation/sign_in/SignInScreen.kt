@@ -1,4 +1,4 @@
-package pe.edu.upc.diligencetechapp.iam.presentation
+package pe.edu.upc.diligencetechapp.iam.presentation.sign_in
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -9,12 +9,13 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
 
 @Composable
-fun LoginScreen(navController: NavController) {
-    Scaffold { paddingValues ->
-        Column(
-            modifier = Modifier
-                .padding(paddingValues)
-                .fillMaxSize()
+fun SignInScreen(viewModel: SignInViewModel) {
+
+
+    Scaffold { innerPadding ->
+        Column(modifier = Modifier
+            .padding(innerPadding)
+            .fillMaxSize()
         ) {
 
         }
